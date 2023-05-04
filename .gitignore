@@ -1,0 +1,9 @@
+hls-get/
+meta_channel/
+most_watched/
+streams/
+streams_crawled/
+twitch_data/
+twitch_video_links/
+
+*.ipynb

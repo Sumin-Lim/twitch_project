@@ -1,6 +1,7 @@
 from tqdm import tqdm
 from glob import glob 
 import pickle as pkl 
+from pathlib import Path
 import time
 
 import asyncio
@@ -8,6 +9,7 @@ from requests_html import AsyncHTMLSession
 
 INTERVAL = 5
 asession = AsyncHTMLSession()
+Path('twitch_video_links/').mkdir(exist_ok=True)
 
 async def get_video(channel):
     res = []
